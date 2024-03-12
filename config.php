@@ -3,10 +3,19 @@
 session_start();
 
 //Configuration et connexion à la base de données
-$host = 'db';
-$db   = 'mydatabase';
-$user = 'user';
-$pass = 'password';
+$url =  parse_url($_SERVER["HTTP_HOST"]);
+if($url["host"] && $url["host"]=="localhost"){
+    $host = 'db';
+    $db   = 'mydatabase';
+    $user = 'user';
+    $pass = 'password';
+} else {
+    $host = 'localhost';
+    $db   = 'equipe300';
+    $user = 'equipe300';
+    $pass = '7WGh79kw4zO+9vHk';
+}
+
 $charset = 'utf8mb4';
 
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";

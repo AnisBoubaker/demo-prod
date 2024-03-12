@@ -6,6 +6,7 @@ $stmt->execute([$gUserId]);
 $postIts = $stmt->fetchAll();
 
 $postItsJson = json_encode($postIts);
+
 ?>
 <!DOCTYPE html>
 <html lang="fr">
