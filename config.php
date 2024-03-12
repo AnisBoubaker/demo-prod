@@ -3,9 +3,8 @@
 session_start();
 
 //Configuration et connexion à la base de données
-$url =  parse_url($_SERVER["HTTP_HOST"]);
-echo parse_url($_SERVER["HTTP_HOST"], PHP_URL_HOST);
-if(isset($url["host"]) && $url["host"]=="localhost"){
+$host =  parse_url($_SERVER["HTTP_HOST"], PHP_URL_HOST);
+if($host=="localhost"){
     $host = 'db';
     $db   = 'mydatabase';
     $user = 'user';
