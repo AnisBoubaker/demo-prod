@@ -1,0 +1,44 @@
+/* Styles personnalisés qui ne sont pas couverts par Bootstrap */
+
+.postit {
+    background-color: #ffeb3b;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.editBtn, .deleteBtn {
+    margin: 5px;
+    float: right;
+}
+
+.postit .editBtn,
+.postit .deleteBtn {
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+.postit:hover .editBtn,
+.postit:hover .deleteBtn {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+#listePostIts {
+    margin-bottom: 50px;
+}
+
+.container {
+    padding-bottom: 50px;
+}
+
+input.form-control:invalid{
+    border-color: red;
+}
