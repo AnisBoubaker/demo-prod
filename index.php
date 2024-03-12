@@ -36,7 +36,7 @@ $postItsJson = json_encode($postIts);
   </head>
   <body>
     <header class="bg-primary text-white text-center py-3">
-      <h1>Babillard de Post-its Électroniques</h1>
+      <h1>Babillard de Post-its Super-electroniques</h1>
     </header>
 
     <div class="container my-4">
